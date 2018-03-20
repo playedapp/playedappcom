@@ -7,7 +7,7 @@ Användare checkar in speltillfälle och:
 * Lägger till vilket spel och ev. vilka expansioner
 * Laddar upp/tar bild(er)
 * Taggar ev. andra användare (dessa notifieras och behöver godkänna att de syns i incheckningen)
-* Sätter ev. betyg på spelet
+* Sätter ev. betyg på spelet (ska kunna sättas av varje taggad deltagare)
 * Anger metadata såsom speltid, antal spelare, poäng
 
 Det finns även en detaljvy för spel, denna har lite data från BGG samt ev. bilder från incheckningar (privacy?) och ev. brädspelspriser samt möjlighet för användaren att spara spelet. Här borde vi också visa snittspeltid (möjlighet att filtrera på antal spelare)
