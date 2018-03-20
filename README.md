@@ -16,6 +16,10 @@ Om man taggas i en incheckning ska man kunna addera den till sitt flöde (public
 
 Man ska också kunna komplettera metadata (redigera? kanske senare) och lägga till fler bilder. Man ska kunna välja om bilderna syns i originalskaparens feed eller endast i ens egna.
 
+## Skisser
+
+https://www.dropbox.com/s/9ihypfz3ps8dcb3/Flow.png
+
 ## BGG API
 
 https://boardgamegeek.com/wiki/page/BGG_XML_API2
