@@ -15,3 +15,7 @@ Det finns även en detaljvy för spel, denna har lite data från BGG samt ev. bi
 Om man taggas i en incheckning ska man kunna addera den till sitt flöde (publicera, reposta eller hur det nu blir).
 
 Man ska också kunna komplettera metadata (redigera? kanske senare) och lägga till fler bilder. Man ska kunna välja om bilderna syns i originalskaparens feed eller endast i ens egna.
+
+## BGG API
+
+https://boardgamegeek.com/wiki/page/BGG_XML_API2
