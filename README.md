@@ -18,7 +18,7 @@ Det finns även en detaljvy för spel, denna har:
 * data från BGG
 * bilder från incheckningar (privacy?)
 * ev. brädspelspriser
-* möjlighet för användaren att spara spelet i en "wishlist"
+* möjlighet för användaren att spara spelet i en "wishlist" (gärna med kommentar, "kolla review", "köp beg" etc.)
 * statistik
   * antal sessioner
   * snittspeltid (möjlighet att filtrera på antal spelare)
