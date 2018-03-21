@@ -3,7 +3,7 @@
 "Untappd for boardgames", arbetsnamn "PlayLog".
 
 ## Ord att spåna namn kring
-table, board, cardboard, chair, seat, sit down, punch
+table, board, cardboard, chair, seat, sit down, punch, session, gather
 
 ## Grundidé
 Användare checkar in speltillfälle och:
