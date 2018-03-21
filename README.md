@@ -1,4 +1,4 @@
-# Spellogg
+# PlayLog
 
 "Untappd for boardgames", arbetsnamn "PlayLog".
 
