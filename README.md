@@ -40,5 +40,7 @@ https://boardgamegeek.com/wiki/page/BGG_XML_API2
 
 ## Övriga idéer
 
+Dessa ingår antagligen inte i en MVP…
+
 * I förtid lägga upp ett speltillfälle, i syfte att hitta andra som vill spela det.
 * Köp och sälj med fokus på "nära mig"/"nära [plats X]"?
