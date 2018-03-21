@@ -30,6 +30,10 @@ Det finns även en detaljvy för spel, denna har:
 2. Samarbeten med utgivare som vill köra lanseringskampanjer/Kickstarters etc.
 3. Möjlighet för konvent/butiker/etc att skapa upp sessioner i förväg som folk kan anmäla sig till. T.ex. Alphaspel ska ha en helg där det kommer spelas en massa. Då kan de i förväg skapa upp ett evenemang, fylla det med slots/incheckningar ("Alphaspel has scheduled a game of *Trickerion* for this saturday @ 1 PM. 2/4 chairs available. Join?". Vi kan också se till att evenemanget syns för fler än Alphaspels följare.
 
+### Frågor
+* Vad ska vi ha för betygsystem? 1-10 som BGG så att avg. rating från BGG och vårt matchar? 0,5–5 skulle också funka att matcha mot BGG.
+* Hur ska vi bygga? Som en webbapp eller som en app med webbteknologi? v1 som webbapp p.g.a. minst friktion?
+
 ## Skisser
 
 https://www.dropbox.com/s/9ihypfz3ps8dcb3/Flow.png
@@ -43,4 +47,4 @@ https://boardgamegeek.com/wiki/page/BGG_XML_API2
 Dessa ingår antagligen inte i en MVP…
 
 * I förtid lägga upp ett speltillfälle, i syfte att hitta andra som vill spela det.
-* Köp och sälj med fokus på "nära mig"/"nära [plats X]"?
+* Köp och sälj med fokus på "nära mig"/"nära [plats X]"
