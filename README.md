@@ -4,9 +4,9 @@
 
 ## Grundidé
 Användare checkar in speltillfälle och:
-* Lägger till vilket spel och ev. vilka expansioner
+* Lägger till vilket spel och ev. expansioner
 * Laddar upp/tar bild(er)
-* Taggar ev. andra användare (dessa notifieras och behöver godkänna att de syns i incheckningen)
+* Taggar ev. andra användare (dessa notifieras och behöver godkänna att de syns i incheckningen, tills dess står det t.ex. "Henry played Game X with 2 others")
 * Sätter ev. betyg på spelet (ska kunna sättas av varje taggad deltagare)
 * Anger metadata såsom speltid, antal spelare, poäng
 
@@ -17,7 +17,7 @@ Man ska också kunna komplettera metadata (redigera? kanske senare) och lägga t
 Det finns även en detaljvy för spel, denna har:
 * data från BGG
 * bilder från incheckningar (privacy?)
-* ev. brädspelspriser
+* ev. kommpling till brädspelspriser.se eller andra liknande (beroende på land)
 * möjlighet för användaren att spara spelet i en "wishlist" (gärna med kommentar, "kolla review", "köp beg" etc.)
 * statistik
   * antal sessioner
@@ -31,7 +31,7 @@ Det finns även en detaljvy för spel, denna har:
 3. Möjlighet för konvent/butiker/etc att skapa upp sessioner i förväg som folk kan anmäla sig till. T.ex. Alphaspel ska ha en helg där det kommer spelas en massa. Då kan de i förväg skapa upp ett evenemang, fylla det med slots/incheckningar ("Alphaspel has scheduled a game of *Trickerion* for this saturday @ 1 PM. 2/4 chairs available. Join?". Vi kan också se till att evenemanget syns för fler än Alphaspels följare.
 
 ### Frågor
-* Vad ska vi ha för betygsystem? 1-10 som BGG så att avg. rating från BGG och vårt matchar? 0,5–5 skulle också funka att matcha mot BGG.
+* Vad ska vi ha för betygsystem? 1-10 som BGG så att avg. rating från BGG och vårt matchar? 0,5–5 skulle också funka att matcha mot BGG. Snyggare/smidigare med 0,5-5 på mobbil.
 * Hur ska vi bygga? Som en webbapp eller som en app med webbteknologi? v1 som webbapp p.g.a. minst friktion?
 
 ## Skisser
