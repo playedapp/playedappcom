@@ -1,6 +1,6 @@
 # Spellogg
 
-"Untappd for boardgames"
+"Untappd for boardgames", arbetsnamn "PlayLog".
 
 ## Grundidé
 Användare checkar in speltillfälle och:
