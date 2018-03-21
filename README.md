@@ -52,3 +52,4 @@ Dessa ingår antagligen inte i en MVP…
 * I förtid lägga upp ett speltillfälle, i syfte att hitta andra som vill spela det.
 * Köp och sälj med fokus på "nära mig"/"nära [plats X]"
 * Se andra med liknande smak som dig, något slags kompatibilitetsindex.
+* Spelrekommendationer baserat på din statistik
