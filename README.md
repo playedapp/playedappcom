@@ -37,3 +37,7 @@ https://www.dropbox.com/s/9ihypfz3ps8dcb3/Flow.png
 ## BGG API
 
 https://boardgamegeek.com/wiki/page/BGG_XML_API2
+
+## Övriga idéer
+
+* I förtid lägga upp ett speltillfälle, i syfte att hitta andra som vill spela det.
