@@ -1,4 +1,4 @@
-# Tabletopers.com
+# Playedapp.com
 
 "Untappd for boardgames"
 
@@ -57,3 +57,9 @@ Dessa ingår antagligen inte i en MVP…
 * Se andra med liknande smak som dig, något slags kompatibilitetsindex.
 * Spelrekommendationer baserat på din statistik
 * Streckkodsläsare för att snabbt logga ett spel
+* Möjlighet att skriva längre recensioner av spel
+* Möjlighet att betygsätta olika aspekter av ett spel
+  * design
+  * artwork
+  * replayability
+  * etc
