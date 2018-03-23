@@ -29,7 +29,7 @@ Det finns även en detaljvy för spel, denna har:
 1. Premium membership m. tillgång till mer statistik (hur ofta man i snitt spelar, med vilka, mest spelade spel, kategori med högst snittbetyg osv) och, i sann Kickstarter-anda, att man hamnar i credits. Mer?
 2. Samarbeten med utgivare som vill köra lanseringskampanjer/Kickstarters etc.
 3. Möjlighet för konvent/butiker/etc att skapa upp sessioner i förväg som folk kan anmäla sig till. T.ex. Alphaspel ska ha en helg där det kommer spelas en massa. Då kan de i förväg skapa upp ett evenemang, fylla det med slots/incheckningar ("Alphaspel has scheduled a game of *Trickerion* for this saturday @ 1 PM. 2/4 chairs available. Join?". Vi kan också se till att evenemanget syns för fler än Alphaspels följare.
-4. Kan ev. funka att köra en kickstarter eller liknande crowdsourcing
+4. Kan ev. funka att köra en kickstarter eller liknande crowdfunding
 
 ### Risker
 * BGG släpper något liknande
