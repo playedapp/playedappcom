@@ -8,7 +8,7 @@ type Game {
     title: String,
     cover: Image,
     sessions: [Session],
-    // BGG data
+    # Add BGG data
 }
 enum WinningCondition {
     HIGHEST
@@ -74,5 +74,5 @@ type Person {
     stats(game: ID): [Stats]
     followedBy: [Person],
     follows: [Person],
-    // account?
+    # Needs an account?
 }
