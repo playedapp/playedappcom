@@ -1,8 +1,11 @@
 type Query {
     
 }
+
 type Mutations {}
+
 scalar Date
+
 type Game {
     id: ID,
     title: String,
@@ -10,11 +13,13 @@ type Game {
     sessions: [Session],
     # Add BGG data
 }
+
 enum WinningCondition {
     HIGHEST
     LOWEST
     NONE
 }
+
 type Session {
     id: ID,
     winningCondition: WinningCondition,
@@ -27,6 +32,7 @@ type Session {
     participants: [Participant],
     createdAt: Date,
 }
+
 type Participant {
     id: ID,
     person: Person,
@@ -34,6 +40,7 @@ type Participant {
     rank: Int,
     role: String
 }
+
 type Location {
     id: ID,
     name: String,
@@ -42,6 +49,7 @@ type Location {
     lng: Float,
     sessions: [Sessions]
 }
+
 type Image {
     id: ID,
     photographer: Person,
@@ -50,6 +58,7 @@ type Image {
     isReported: Bool,
     createdAt: Date
 }
+
 type Rating {
     id: ID,
     rating: Float,
@@ -57,15 +66,18 @@ type Rating {
     createdAt: Date,
     game: Game
 }
+
 type Comment {
     id: ID,
     content: String,
     createdAt: Date,
     writtenBy: Person
 }
+
 type Stats {
     id: ID,
 }
+
 type Person {
     id: ID,
     name: String,
