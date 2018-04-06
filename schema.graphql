@@ -1,5 +1,7 @@
 type Query {
-    
+      games: [Game],
+      flow: [Session],
+      session(id: ID!): Session
 }
 
 type Mutations {}
