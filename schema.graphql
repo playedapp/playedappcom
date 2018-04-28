@@ -1,92 +1,163 @@
-type Query {
-      games: [Game],
-      flow: [Session],
+   type Query {
+      games(search: String): [Game]
+      game(id: ID!): Game
+      flow: [Session]
       session(id: ID!): Session
-}
+      people(search: String): [Person]
+      person(id: ID!): Person
+      search(search: String): SearchResult
+      currentUser: Person
+   }
 
-type Mutations {}
+   type Mutation {
+     createSession(
+       input: SessionInput
+     ): CreateSessionPayload
+     augmentSession(
+       id: ID!
+     ): Session
+   }
 
-scalar Date
+   input SessionInput {
+     games: [ID!]
+     participants: [ParticipantInput]
+   }
 
-type Game {
-    id: ID,
-    title: String,
-    cover: Image,
-    sessions: [Session],
-    # Add BGG data
-}
+   type CreateSessionPayload {
+     session: Session
+    }
 
-enum WinningCondition {
-    HIGHEST
-    LOWEST
-    NONE
-}
+    type AugmentSessionPayload {
+      session: Session
+    }
 
-type Session {
-    id: ID,
-    winningCondition: WinningCondition,
-    cooperative: Bool,
-    games: [Games],
-    playtime: Int,
-    variants: String,
-    location: Location,
-    comments: [Comment],
-    participants: [Participant],
-    createdAt: Date,
-}
+   #scalar Date {}
 
-type Participant {
-    id: ID,
-    person: Person,
-    score: Int,
-    rank: Int,
-    role: String
-}
+    type SearchResult {
+      games: [Game]
+      locations: [Location]
+      people: [Person]
+    }
 
-type Location {
-    id: ID,
-    name: String,
-    address: String,
-    lat: Float,
-    lng: Float,
-    sessions: [Sessions]
-}
+   type Game {
+      id: ID
+      title: String
+      cover: Image
+      sessions: [Session]
+      averageRating: Float
+      yearPublished: Int
+      # Add BGG data
+   }
 
-type Image {
-    id: ID,
-    photographer: Person,
-    url: String,
-    session: [Session],
-    isReported: Bool,
-    createdAt: Date
-}
+   enum WinningCondition {
+      HIGHEST
+      LOWEST
+      NONE
+   }
 
-type Rating {
-    id: ID,
-    rating: Float,
-    comment: Comment,
-    createdAt: Date,
-    game: Game
-}
+   type Session {
+      id: ID
+      winningCondition: WinningCondition
+      cooperative: Boolean
+      games: [Game]
+      playtime: Int
+      variants: String
+      location: Location
+      comments: [Comment]
+      participants: [Participant]
+      images: [Image]
+      # createdAt: Date
+   }
 
-type Comment {
-    id: ID,
-    content: String,
-    createdAt: Date,
-    writtenBy: Person
-}
+   type Participant {
+      id: ID!
+      person: Person!
+      score: Int
+      rank: Int
+      role: String
+      ratings: [Rating]
+   }
 
-type Stats {
-    id: ID,
-}
+  input ParticipantInput {
+      person: ID!
+      score: Int
+      rank: Int
+      role: String
+      ratings: [RatingInput]
+   }
 
-type Person {
-    id: ID,
-    name: String,
-    sessions: [Session],
-    ratings: [Rating]
-    stats(game: ID): [Stats]
-    followedBy: [Person],
-    follows: [Person],
-    # Needs an account?
-}
+   type Location {
+      id: ID
+      name: String
+      address: String
+      lat: Float
+      lng: Float
+      sessions: [Session]
+   }
+
+   type Image {
+      id: ID
+      photographer: Person
+      url: String
+      session: [Session]
+      isReported: Boolean
+      # createdAt: Date
+   }
+
+   type Rating {
+      id: ID!
+      value: Float
+      previous: Rating
+      comment: Comment
+      # createdAt: Date
+      game: Game
+      session: Session
+      participant: Participant
+      person: Person
+   }
+
+   input RatingInput {
+     value: Float
+     comment: CommentInput
+     game: ID!
+     session: ID
+     participant: ID
+     person: ID!
+   }
+
+   type Comment {
+      id: ID
+      content: String!
+      # createdAt: Date
+      writtenBy: Person
+   }
+
+   input CommentInput {
+     content: String!
+     writtenBy: ID!
+   }
+
+   type Stats {
+      id: ID
+      plays: Int
+      wins: Int
+      best: Int
+      worst: Int
+      average: Int
+      person: Person
+      game: Game
+   }
+
+   type Person {
+      id: ID
+      name: String
+      avatar: Image
+      sessions: [Session]
+      ratings: [Rating]
+      stats(games: [ID]): [Stats]
+      followedBy: [Person]
+      follows: [Person]
+      isFollowingMe: Boolean
+      isFollowedByMe: Boolean
+      # Needs an account?
+   }
